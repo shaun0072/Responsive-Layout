@@ -119,7 +119,11 @@ hr {
 }
 
 
+/* Under-Construction Page */
 
+.tongue-out-face {
+	max-width: 150px;
+}
 
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
@@ -131,6 +135,10 @@ hr {
 		display: inline-block;
 		width: initial;
 		background-color: initial;
+	}
+	.main-nav li a:hover,
+	.footer-nav li a:hover	{
+		color: grey;
 	}
 	.profile-pic {
 		float: right;
@@ -148,6 +156,14 @@ hr {
 		float: left;
 		padding-left: .5em;
 		padding-right: .5em;
+	}
+	.wrapper ul li img {
+		box-shadow: none;
+		transition: box-shadow .2s;
+	}
+	.wrapper ul li img:hover {
+		box-shadow: 10px 10px 5px grey;
+		transition: box-shadow .2s;
 	}
 	.back-to-top {
 		display: none;
