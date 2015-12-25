@@ -1,0 +1,201 @@
+/* Global Layout Set-up */
+* { 
+	box-sizing: border-box;
+}
+body {
+	text-align: center;
+	background-color: rgb(248, 248, 248);
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	width: 100%;
+}
+
+/* Link Styles */
+a {
+	text-decoration: none;
+	color: black;
+}
+h3, p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.9em;
+}
+
+
+/* Section Styles */
+header {
+	margin-bottom: 70px;
+}
+.header-container {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.name {
+	margin: 0;
+	padding: 40px 0;
+}
+.main-nav li,
+.footer-nav {
+	width: 100%;
+	background-color: white;
+	margin-bottom: .5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.main-nav li a,
+.footer-nav {
+	display: block;
+	padding: 1.2em;
+	height: 100%;
+	color: black;
+}
+.profile-pic {
+	width: 70%;
+	margin: 50px 0 10px;
+}
+.wrapper {
+	background-color: white;
+	width: 100%;
+	padding: 3em 1em;
+}
+.wrapper ul li p {
+	margin-bottom: 63px;
+}
+.body-title {
+	text-transform: uppercase;
+	margin-bottom: 80px;
+	font-size: 1.3em;
+}
+
+footer {
+	padding-top: 85px;
+	width: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.footer-title {
+	text-transform: uppercase;
+	font-size: 1.3em;
+	margin-bottom: 2.5em;
+}
+.contact-info {
+	margin: .3em 0 .3em;
+}
+.contact-info-links {
+	font-size: .9em;
+	font-weight: bold;
+}
+hr {
+	margin-top: 100px;
+	border-color: rgba(225, 225, 225, 0.5);
+}
+.footer-name,
+.back-to-top {
+	margin: 1.9em 0 50px;
+	font-size: 1.3em;
+}
+.footer-name {
+	float: left;
+}
+.back-to-top {
+	float: right;
+	font-weight: bold;
+}
+.footer-nav {
+	display: none;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+	.name {
+		padding-bottom: 21px;
+	}
+	.main-nav li,
+	.footer-nav {
+		display: inline-block;
+		width: initial;
+		background-color: initial;
+	}
+	.profile-pic {
+		float: right;
+		width: 30%;
+		
+	}
+	.about-statement {
+		float: left;
+		width: 59%;
+		text-align: left;
+		margin-top: 50px;
+	}
+	.wrapper ul li {
+		width: 50%;
+		float: left;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+	.back-to-top {
+		display: none;
+	}
+	.footer-nav {
+		float: right;
+		padding: 0;
+		margin: 39px 0 50px;
+	}
+	.footer-nav li {
+		float: left;
+		margin-right: 1em;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.header-container {
+		max-width: 1100px;
+	}
+	.name {
+		float: left;
+	}
+	.main-nav {
+		float: right;
+		padding-top: 33px;
+	}
+	.profile-pic {
+		max-width: 300px;
+	}
+	.wrapper {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.wrapper ul li {
+		width: 33.33333%;
+		margin-top: 40px;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.wrapper ul li p {
+		font-size: 1.4em;
+	}
+	footer {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.footer-info {
+		max-width: 700px;
+		margin: 0 auto;
+		margin-bottom: 100px;
+	}
+}
