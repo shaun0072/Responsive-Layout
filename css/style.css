@@ -120,9 +120,23 @@ hr {
 
 
 /* Under-Construction Page */
-
+.under-construction-message {
+	background-color:white;
+	padding:300px 0 300px;
+}
 .tongue-out-face {
 	max-width: 150px;
+}
+.under-construction-message h2 {
+	color:red;
+	font-weight:bold;
+}
+.under-construction-message p {
+	font-weight:bold;
+}
+.under-construction-message p a {
+	font-size:22px;
+	text-decoration:underline;
 }
 
 /* Styles for larger screens */
